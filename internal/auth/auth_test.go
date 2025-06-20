@@ -17,7 +17,7 @@ func TestGetApiKey(t *testing.T) {
 
 	headers.Set("Authorization", "BearerToken your-token-here")
 	_, err2 := GetAPIKey(headers)
-	if (err2 != nil) {
+	if (err2 == nil) {
 		t.Errorf("Expected error when invalid key given: %v",err2)
 	}
 }
