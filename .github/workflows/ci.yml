@@ -20,9 +20,8 @@ jobs:
 
       - name: unit tests
         run: go test -cover ./...
-      
-jobs:
-  tests:
+
+  formats:
     name: FormatCheck
     runs-on: ubuntu-latest
 
